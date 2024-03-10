@@ -1,7 +1,7 @@
 # deep-learning-challenge
 
 
-Purpose - The goal of this analysis was to predict wether or not money was adequately spent from the charity.
+Purpose - This analysis aimed to predict whether money was adequately spent from the charity.
 
 EIN and NAME—Identification columns  
 APPLICATION_TYPE—Alphabet Soup application type  
@@ -15,7 +15,8 @@ SPECIAL_CONSIDERATIONS—Special considerations for application
 ASK_AMT—Funding amount requested  
 IS_SUCCESSFUL—Was the money used effectively  
 
-IS_SUCCESSFUL is our predictor, y
+IS_SUCCESSFUL is our predictor or our ```y``` variable.
+
 ## Project Overview
 - Provide an overview of the project, including its scope and objectives.
 - Describe the problem being addressed and the motivation behind the project.
