@@ -1,5 +1,6 @@
 # deep-learning-challenge
 
+During the 2nd iteration of each test, I left the NAME column in, binned the lower-occurring names into Other, and cut out a sample of the data set to make testing run more efficiently.
 
 Purpose - This analysis aimed to predict whether money was adequately spent from the charity.
 
