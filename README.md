@@ -2,7 +2,13 @@
 
 During the 2nd iteration of each test, I left the NAME column in, binned the lower-occurring names into Other, and cut out a sample of the data set to make testing run more efficiently.
 
-Purpose - This analysis aimed to predict whether money was adequately spent from the charity.
+
+## Project Overview
+The nonprofit foundation Alphabet Soup wanted a tool that can help it select the applicants for funding with the best chance of success in their ventures. Using the Tensorflow neural network library, I used the provided dataset to attempt create an accurate binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup.
+
+## Dataset
+
+Here is an overview of each data point available in our data set.  
 
 EIN and NAME—Identification columns  
 APPLICATION_TYPE—Alphabet Soup application type  
@@ -18,11 +24,9 @@ IS_SUCCESSFUL—Was the money used effectively
 
 IS_SUCCESSFUL is our predictor or our ```y``` variable.
 
-## Project Overview
-- Provide an overview of the project, including its scope and objectives.
-- Describe the problem being addressed and the motivation behind the project.
+This was a very large data set, with a lot of one-off values and classifiers that needed to be binned in order to allow our model to run more efficiently.
+![Here I binned the lesser-occurring application types to reduce the amount of singular values](image.png)
 
-## Dataset
 - Discuss the dataset used in the project.
 - Provide details about the data sources, size, and format.
 - Explain any preprocessing steps performed on the dataset.
