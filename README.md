@@ -25,13 +25,15 @@ IS_SUCCESSFUL—Was the money used effectively
 IS_SUCCESSFUL is our predictor or our ```y``` variable.
 
 This was a very large data set, with a lot of one-off values and classifiers that needed to be binned in order to allow our model to run more efficiently.
-![](image.png)
-![](image-1.png)
+![image](https://github.com/QbicleTKG/deep-learning-challenge/assets/139186713/a1197205-dcd9-4c78-96ec-bce7c1726888)
+![image](https://github.com/QbicleTKG/deep-learning-challenge/assets/139186713/1a2e43ea-0dbd-4bf2-8ffd-e531f8a2c437)
+
 Here I binned the lesser-occurring application types and classifications to reduce the amount of singular values. This was done consistently on all models.
 
 A different technique I implemented only on the second iteration of each model, was to include the 'NAME' column in the data set, instead of dropping it. Ultimately this led to greater accuracry in my models, but inititally there was FAR too much data for the model to run, and not even Google Collab could run it.
 
-![](image-2.png)
+![image](https://github.com/QbicleTKG/deep-learning-challenge/assets/139186713/bce0f719-44b7-4a3a-a71c-04b275c8f517)
+
 To fix this, I binned the NAME values using the same technique as the CLASSIFICATION and APPLICATION_TYPE columns, and captured a random 30% sample for testing, instead of the whole data set. This resulted in much more efficient and timely model fitting and training.
 
 ## Model Architecture
