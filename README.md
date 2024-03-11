@@ -8,7 +8,7 @@ The nonprofit foundation Alphabet Soup wanted a tool that can help it select the
 
 ## Dataset
 
-Here is an overview of each data point available in our data set.  
+Here is an overview of each data point available in our data set:  
 
 EIN and NAME—Identification columns  
 APPLICATION_TYPE—Alphabet Soup application type  
@@ -25,16 +25,24 @@ IS_SUCCESSFUL—Was the money used effectively
 IS_SUCCESSFUL is our predictor or our ```y``` variable.
 
 This was a very large data set, with a lot of one-off values and classifiers that needed to be binned in order to allow our model to run more efficiently.
-![Here I binned the lesser-occurring application types to reduce the amount of singular values](image.png)
+![](image.png)
+![](image-1.png)
+Here I binned the lesser-occurring application types and classifications to reduce the amount of singular values. This was done consistently on all models.
 
-- Discuss the dataset used in the project.
-- Provide details about the data sources, size, and format.
-- Explain any preprocessing steps performed on the dataset.
+A different technique I implemented only on the second iteration of each model, was to include the 'NAME' column in the data set, instead of dropping it. Ultimately this led to greater accuracry in my models, but inititally there was FAR too much data for the model to run, and not even Google Collab could run it.
+
+![](image-2.png)
+To fix this, I binned the NAME values using the same technique as the CLASSIFICATION and APPLICATION_TYPE columns, and captured a random 30% sample for testing, instead of the whole data set. This resulted in much more efficient and timely model fitting and training.
 
 ## Model Architecture
-- Describe the deep learning model architecture used in the project.
-- Explain the rationale behind the chosen architecture.
-- Discuss any modifications or enhancements made to the base model.
+I ultimately ran 6 models in an attempt to achieve higher accuracy:
+1. Deep Neural Network Model - 72.5% accuracy achieved
+2. Deep Neural Network Model w/ NAME column included - 78.8% accuracy achieved
+3. Neural Network model implementing hyperparameter keras tuner - 72.3% accuracy achieved
+4. Neural Network model implementing hyperparameter keras tuner w/ NAME column included - 78.9% accuracy achieved
+5. Neural Network model implementing Bayesian keras tuner - 72.7% accuracy achieved
+6. Neural Network model implementing Bayesian keras tuner w/ NAME column included - 78.3% accuracy achieved
+
 
 ## Training Process
 - Explain the training process, including the optimization algorithm and hyperparameters used.
