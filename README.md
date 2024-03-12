@@ -34,7 +34,7 @@ A different technique I implemented only on the second iteration of each model, 
 
 ![image](https://github.com/QbicleTKG/deep-learning-challenge/assets/139186713/bce0f719-44b7-4a3a-a71c-04b275c8f517)
 
-To fix this, I binned the NAME values using the same technique as the CLASSIFICATION and APPLICATION_TYPE columns, and captured a random 30% sample for testing, instead of the whole data set. This resulted in much more efficient and timely model fitting and training.
+To fix this, I binned the NAME values using the same technique as the CLASSIFICATION and APPLICATION_TYPE columns and captured a random 30% sample for testing instead of the whole data set. This resulted in much more efficient and timely model fitting and training.
 
 ## Model Architecture
 I ultimately ran 6 models in an attempt to achieve higher accuracy:
@@ -45,27 +45,5 @@ I ultimately ran 6 models in an attempt to achieve higher accuracy:
 5. Neural Network model implementing Bayesian keras tuner - 72.7% accuracy achieved
 6. Neural Network model implementing Bayesian keras tuner w/ NAME column included - 78.3% accuracy achieved
 
-
-## Training Process
-- Explain the training process, including the optimization algorithm and hyperparameters used.
-- Discuss any data augmentation techniques employed during training.
-- Provide details about the training duration and convergence criteria.
-
-## Results and Evaluation
-- Present the results obtained from the trained model.
-- Discuss the evaluation metrics used to assess the model's performance.
-- Compare the model's performance against baseline or state-of-the-art approaches.
-
-## Discussion
-- Analyze the results and discuss any insights gained from the project.
-- Highlight the strengths and limitations of the approach used.
-- Identify potential areas for improvement or future work.
-
 ## Conclusion
-- Summarize the key findings and contributions of the deep-learning-challenge repository.
-- Discuss the implications of the project and its potential applications.
-
-## References
-- Include a list of references to any external sources or research papers used in the project.
-
-.
+Ultimately, leaving the NAME column in the dataset produced the highest accuracy across all tests. 
